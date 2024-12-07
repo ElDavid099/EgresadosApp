@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EgresadosApp.Views.Encuesta"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             Title="Encuesta">
+
+    <ContentPage.Resources>
+        <Style x:Key="lblBorder"
+             TargetType="Label">
+            <Setter Property="Background" Value="#ddd"/>
+            <Setter Property="HeightRequest" Value="1" />
+
+
+        </Style>
+        
+    </ContentPage.Resources>
+
+
+        <ContentPage.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="White" StatusBarStyle="DarkContent"/>
+    </ContentPage.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border>
+                <Grid RowDefinitions="auto,1,auto">
+                    <VerticalStackLayout Grid.Row="2" Padding="10">
+                        
+
+                    </VerticalStackLayout>
+                    <Label Text="I. Perfil de egresado"></Label>
+                    <Label Grid.Row="1" Style="{StaticResource lblBorder }" ></Label>       
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

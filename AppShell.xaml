@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="EgresadosApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:EgresadosApp"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False"
+    xmlns:views="clr-namespace:EgresadosApp.Views"
+    Title="EgresadosApp">
+    
+   
+    <ShellContent
+        
+        Title="Home"
+        ContentTemplate="{DataTemplate views:Encuesta}"
+        Route="MainPage" />
+
+    <!--<ShellContent Title="Encuesta"
+    ContentTemplate="{DataTemplate views:Encuesta}"
+    Route="Encuesta"/>-->
+
+
+
+</Shell>
